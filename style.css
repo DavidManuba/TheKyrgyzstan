@@ -1,0 +1,70 @@
+/* 1. Global Page Transition (Fade-in on Load) */
+body {
+    animation: fadeInPage 0.8s ease-out forwards;
+    overflow-x: hidden;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. Text Reveal Effect (Targeting Headings) */
+h1, h2, .font-serif {
+    overflow: hidden;
+    display: block;
+}
+
+h1, h2 {
+    animation: textSlideUp 1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+}
+
+@keyframes textSlideUp {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* 3. Smooth Hover Transitions for Buttons and Links */
+a, button, .carousel-item, .group img {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 4. Subtle Scaling Effect for Image Cards */
+.shadow-lg, .shadow-xl, .rounded-2xl {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.shadow-lg:hover, .shadow-xl:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 5. Nav Link Underline Effect */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #D9B367; /* accentYellow */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* 6. Form Input Focus Effect (For Contact Page) */
+input, textarea {
+    transition: border-bottom 0.3s ease, padding-left 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    padding-left: 8px;
+    border-bottom: 1px solid #6C9E9D !important;
+}
