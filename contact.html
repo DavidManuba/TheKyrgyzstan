@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kyrgyzstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        tealAccent: '#6C9E9D',
+                        accentYellow: '#D9B367',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+        <nav class="absolute top-0 left-0 w-full z-10 pt-6">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-center space-x-12">
+                <a href="index.html" class="text-sm text-white/90 hover:text-white">Home</a>
+                <a href="attractions.html" class="text-sm text-white/90 hover:text-white">Kyrgyzstan</a>
+                <a href="culture.html" class="ttext-sm text-white/90 hover:text-white">Culture</a>
+                <a href="contact.html" class="text-sm text-white/90 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat py-12 px-4" 
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/image7.jpg');">
+        
+        <div class="absolute top-8 left-8">
+            <a href="index.html" class="text-white hover:text-accentYellow transition-colors flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                Back to Home
+            </a>
+        </div>
+
+        
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden max-w-4xl w-full grid grid-cols-1 md:grid-cols-2">
+            
+            <div class="bg-tealAccent p-10 text-white flex flex-col justify-between">
+                <div>
+                    <h2 class="font-serif text-4xl mb-4">Get in Touch</h2>
+                    <div class="border-t-2 border-accentYellow w-12 mb-8"></div>
+                    <p class="text-white/80 leading-relaxed mb-8">
+                        Have questions about your journey to Kyrgyzstan? We're here to help you plan the perfect adventure.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="text-accentYellow font-bold uppercase text-xs tracking-widest mt-1">Email</span>
+                            <p class="text-sm">hello@explorekyrgyzstan.kg</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-accentYellow font-bold uppercase text-xs tracking-widest mt-1">Phone</span>
+                            <p class="text-sm">+996 555 123 456</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-accentYellow font-bold uppercase text-xs tracking-widest mt-1">Visit</span>
+                            <p class="text-sm">123 Manas Avenue, <br>Bishkek, Kyrgyzstan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-10 text-xs text-white/50">
+                    &copy; 2026 Iconic Kyrgyzstan
+                </div>
+            </div>
+
+            <div class="p-10 bg-white">
+                <form action="#" method="POST" class="space-y-5">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2">Full Name</label>
+                        <input type="text" placeholder="Your Name" class="w-full border-b border-gray-200 py-2 focus:border-tealAccent outline-none transition-colors text-sm bg-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2">Email Address</label>
+                        <input type="email" placeholder="email@example.com" class="w-full border-b border-gray-200 py-2 focus:border-tealAccent outline-none transition-colors text-sm bg-transparent">
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2">Message</label>
+                        <textarea rows="4" placeholder="How can we help you?" class="w-full border-b border-gray-200 py-2 focus:border-tealAccent outline-none transition-colors text-sm bg-transparent resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-tealAccent text-white font-bold uppercase py-4 rounded-lg hover:bg-tealAccent/90 transition-all shadow-lg hover:shadow-tealAccent/20 tracking-widest text-xs">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

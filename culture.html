@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio: Culture, Language & Flavors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        tealText: '#6C9E9D',
+                        accentYellow: '#D9B367',
+                        bgTeal: '#6C9E9D',
+                        darkTeal: '#4A6B6A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .carousel-item { transition: all 0.4s ease-in-out; }
+    </style>
+</head>
+<body class="bg-[#E9EDF0] font-sans font-light text-gray-700">
+
+    <nav class="absolute top-0 left-0 w-full z-10 pt-6">
+        <div class="max-w-7xl mx-auto px-12 flex justify-center space-x-16 text-white text-xs">
+                <a href="index.html" class="text-sm text-white/90 hover:text-white">Home</a>
+                <a href="attractions.html" class="text-sm text-white/90 hover:text-white">Kyrgyzstan</a>
+                <a href="culture.html" class="text-sm text-white/90 hover:text-white">Culture</a>
+                <a href="contact.html" class="text-sm text-white/90 hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <header class="h-[60vh] bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div class="text-center px-6">
+                <p class="font-serif text-xl text-white tracking-widest uppercase mb-4">Be My Guest</p>
+                <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-normal leading-tight">Discover the Soul of Kyrgyzstan</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <h1 class="font-serif text-5xl text-gray-800 mb-4">The Soul of Kyrgyzstan</h1>
+                <div class="border-t-2 border-accentYellow w-24 mx-auto"></div>
+                <p class="mt-6 text-gray-500 italic">"Jashoodon yrakhat aluu" — Taking pleasure/delight from living.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="image/image13.jpg" alt="Carnival Dancers" class="w-full h-[500px] object-cover">
+                </div>
+                <div class="space-y-6">
+                    <h2 class="font-serif text-3xl text-gray-800">Nan or Lepyoshka</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">
+Hand-stamped with a wooden Chekich and baked in traditional clay ovens, this sacred Tandyr Nan is a 5,000-year-old staple that represents the very heart of Kyrgyz hospitality. Every golden loaf is a piece of edible history, meticulously crafted from simple wheat and fire to be shared by hand as a symbol of unity.                    <div class="bg-tealText/10 p-6 border-l-4 border-tealText">
+                        <p class="text-sm font-medium italic text-darkTeal">
+                            "Look closely at the center of your bread: those intricate patterns aren't just for show—they are created by a hand-carved wooden stamp called a Chekich, a tool that has defined the artistry of Central Asian baking for over five millennia."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl shadow-xl overflow-hidden mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="bg-bgTeal p-12 text-white space-y-4">
+                    <h2 class="font-serif text-3xl">The Language</h2>
+                    <div class="border-t-2 border-accentYellow w-12"></div>
+                    <p class="text-white/90">A Turkic language closely related to Kazakh and Turkish. It is the language of national identity, folklore, and the epic of Manas. Since the early 1940s, it has been written using a Cyrillic-based alphabet, though there are ongoing cultural discussions about a potential future shift to Latin script..</p>
+                </div>
+                <div class="col-span-2 p-12">
+                    <h3 class="font-bold text-gray-800 mb-6 uppercase tracking-widest text-sm">Kyrgyz language</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border-b border-gray-100 pb-4">
+                            <span class="text-tealText font-bold block text-lg">Salamatsyzby</span>
+                            <span class="text-gray-500 text-sm">"Hello" — The standard greeting.</span>
+                        </div>
+                        <div class="border-b border-gray-100 pb-4">
+                            <span class="text-tealText font-bold block text-lg">Kutmanduu tan</span>
+                            <span class="text-gray-500 text-sm">"Good Morning" — A common greeting used in the morning.</span>
+                        </div>
+                        <div class="border-b border-gray-100 pb-4">
+                            <span class="text-tealText font-bold block text-lg">Rakhmat!</span>
+                            <span class="text-gray-500 text-sm">"Thank you" — A common way to express gratitude.</span>
+                        </div>
+                        <div class="border-b border-gray-100 pb-4">
+                            <span class="text-tealText font-bold block text-lg">Baary jakshy?</span>
+                            <span class="text-gray-500 text-sm">"Everything is good?" — A common way to check on someone's well-being.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl shadow-xl p-8 md:p-16 mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl text-gray-800 mb-4">A Taste of Tradition</h2>
+                <div class="border-t-2 border-accentYellow w-24 mx-auto"></div>
+            </div>
+
+            <div class="flex justify-center space-x-4 md:space-x-8 mb-12 overflow-x-auto no-scrollbar pb-2">
+                <button onclick="filterContent('all')" id="btn-all" class="px-6 py-2 rounded-full text-sm font-medium bg-[#fdf6ec] text-[#d97706] transition">All</button>
+                <button onclick="filterContent('savory')" id="btn-savory" class="px-6 py-2 rounded-full text-sm font-medium text-gray-400 hover:text-gray-600 transition">Savory</button>
+                <button onclick="filterContent('snacks')" id="btn-snacks" class="px-6 py-2 rounded-full text-sm font-medium text-gray-400 hover:text-gray-600 transition">Snacks</button>
+                <button onclick="filterContent('sweets')" id="btn-sweets" class="px-6 py-2 rounded-full text-sm font-medium text-gray-400 hover:text-gray-600 transition">Sweets</button>
+            </div>
+
+            <div class="relative px-4">
+                <button onclick="scrollCarousel(-1)" class="absolute -left-4 top-1/2 -translate-y-1/2 text-gray-300 hover:text-tealText transition z-10">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+
+                <div id="food-carousel" class="flex overflow-x-auto gap-6 no-scrollbar scroll-smooth">
+                    
+                    <div class="carousel-item min-w-full md:min-w-[calc(33.333%-1rem)] bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm item savory">
+                        <img src="image/food4.jpg" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-800 text-lg">Beshbarmak</h3>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">Savory Meal</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item min-w-full md:min-w-[calc(33.333%-1rem)] bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm item snacks">
+                        <img src="image/food6.webp" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-800 text-lg">Boorsok</h3>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">Traditional Snack</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item min-w-full md:min-w-[calc(33.333%-1rem)] bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm item sweets">
+                        <img src="image/food7.jpg" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-800 text-lg">Chak-Chak</h3>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">Sweet Dessert</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item min-w-full md:min-w-[calc(33.333%-1rem)] bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm item savory snacks">
+                        <img src="image/food5.jpg" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-gray-800 text-lg">Manty</h3>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">The Silk Road Dumpling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="scrollCarousel(1)" class="absolute -right-4 top-1/2 -translate-y-1/2 text-gray-300 hover:text-tealText transition z-10">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        const track = document.getElementById('food-carousel');
+        
+        function scrollCarousel(direction) {
+            const width = track.offsetWidth;
+            track.scrollBy({ left: direction * width, behavior: 'smooth' });
+        }
+
+        function filterContent(category) {
+            const items = document.querySelectorAll('.carousel-item');
+            const buttons = document.querySelectorAll('button[id^="btn-"]');
+            
+            // UI Update for Buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-[#fdf6ec]', 'text-[#d97706]');
+                btn.classList.add('text-gray-400');
+            });
+            const activeBtn = document.getElementById('btn-' + category);
+            activeBtn.classList.add('bg-[#fdf6ec]', 'text-[#d97706]');
+            activeBtn.classList.remove('text-gray-400');
+
+            // Filtering logic
+            items.forEach(item => {
+                item.style.opacity = '0';
+                setTimeout(() => {
+                    if (category === 'all' || item.classList.contains(category)) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }, 400);
+            });
+        }
+    </script>
+
+    <footer class="border-t-teal border-t-2 py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            
+            <div>
+                <h4 class="text-lg font-normal text-gray-800 mb-4">Contact Us</h4>
+                <div class="yellow-line w-12 mb-10 mx-auto md:mx-0"></div>
+                <p class="text-sm text-gray-600 leading-relaxed mb-6 max-w-sm mx-auto md:mx-0">Ask us anything! We're here to answer any questions you have.</p>
+                <p class="text-sm text-gray-600">Email: <a href="mailto:info@mysite.com" class="hover:underline">info@mysite.com</a></p>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-normal text-gray-800 mb-4">Follow Us</h4>
+                <div class="yellow-line w-12 mb-10 mx-auto md:mx-0"></div>
+                <div class="flex items-center justify-center md:justify-start space-x-5 text-gray-600">
+                    <a href="#" class="hover:text-black"><i class="fab fa-tripadvisor fa-lg"></i> </a>
+                    <a href="#" class="hover:text-black"><i class="fab fa-facebook-f fa-lg"></i> </a>
+                    <a href="#" class="hover:text-black"><i class="fab fa-instagram fa-lg"></i> </a>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-3 mt-4 text-xs font-mono">
+                    <div class="w-7 h-7 bg-gray-200 rounded-full flex items-center justify-center">TA</div>
+                    <div class="w-7 h-7 bg-gray-200 rounded-full flex items-center justify-center">FB</div>
+                    <div class="w-7 h-7 bg-gray-200 rounded-full flex items-center justify-center">IG</div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-normal text-gray-800 mb-4">Subscribe for Updates & Offers</h4>
+                <div class="yellow-line w-12 mb-10 mx-auto md:mx-0"></div>
+                <form class="space-y-4 max-w-sm mx-auto md:mx-0">
+                    <div>
+                        <label for="email" class="block text-xs text-gray-500 mb-1">Email *</label>
+                        <input type="email" id="email" class="w-full bg-[#F4F4F4] border border-[#E1E1E1] px-4 py-2.5 text-sm focus:ring-1 focus:ring-teal-text outline-none" required>
+                    </div>
+                    <div class="flex items-start">
+                        <input type="checkbox" id="newsletter" class="mt-1 mr-3 h-4 w-4 rounded border-gray-300 teal-text focus:ring-teal-text">
+                        <label for="newsletter" class="text-xs text-gray-500">Yes, subscribe me to your newsletter. *</label>
+                    </div>
+                    <button type="submit" class="w-full md:w-auto bg-[#888] text-white text-sm font-normal uppercase tracking-wider py-3 px-8 hover:bg-gray-700">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center text-xs text-gray-500 mt-16 pt-8 border-t border-gray-100">
+            <p>&copy; Be my guest in Kyrgyzstan. Powered and secured by Manuba</p>
+        </div>
+    </footer>
+
+</body>
+</html>
